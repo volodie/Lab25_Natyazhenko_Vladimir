@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Doctor>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+     @foreach (var item in Model)
+    {
+        <div class="text-left">
+        <p>
+            IdDoctor: <strong>@item.DoctorId</strong> <br>
+            Name: <strong>@item.DoctorName</strong> <br>
+            Surname: <strong>@item.DoctorSurname</strong> <br>
+        </p>
+    </div>
+    }
+
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>

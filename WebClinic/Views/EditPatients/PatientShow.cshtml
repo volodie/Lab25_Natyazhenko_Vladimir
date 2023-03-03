@@ -1,0 +1,17 @@
+﻿@model IEnumerable<Patient>
+
+@{
+    ViewData["Title"] = "Show Page";
+}
+    <div class="text-left">
+      @foreach (var item in Model)
+{
+            <div class="text-left">
+            <p>
+                IdPatient: <strong>@item.PatientId</strong> <br>
+                Name: <strong>@item.PatientName</strong> <br>
+                Surname: <strong>@item.PatientSurname</strong> <br>
+            </p>
+        </div>
+}
+    </div>

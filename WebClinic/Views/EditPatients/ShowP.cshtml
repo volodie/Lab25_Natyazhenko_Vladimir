@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Edit patients";
+}
+<h1>@ViewData["Title"]</h1>
+
+<div class="text-center">
+    <div style="text-align: left">
+        <form asp-controller="EditPatiens" asp-action="PatientShow" method="post">
+            ID:               <input name="id" /><br />
+            <button type="submit">Show patient</button>
+        </form>
+    </div>
+</div>
+

@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Patient>
+@{
+    ViewData["Title"] = "Edit Patients";
+}
+<h1>@ViewData["Title"]</h1>
+@foreach (var item in Model)
+{
+            <div class="text-left">
+            <p>
+                IdPatient: <strong>@item.PatientId</strong> <br>
+                Name: <strong>@item.PatientName</strong> <br>
+                Surname: <strong>@item.PatientSurname</strong> <br>
+            </p>
+        </div>
+}
+<p>Use this page to detail your site's privacy policy.</p>
